@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: #f5f5f5;
+  line-height: 24px;
+  overflow: hidden;
+}
+.contanaire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 10px;
+}
+.login h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+.formu {
+  background-color: white;
+  border: 2px solid white;
+  padding: 15px 10px;
+  margin: 24px 0;
+  box-shadow: -1px 3px 20px 0px;
+  border-radius: 15px;
+}
+.formu p {
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding: 10px 15px;
+  text-justify: auto;
+}
+.formu a {
+  color: #e38d06;
+}
+input:focus {
+  outline: none;
+  border: 2px solid #e38d06;
+}
+input[type="text"] {
+  width: 500px;
+  height: 50px;
+  margin: 18px 0;
+  border-radius: 10px;
+  padding: 0 15px;
+  border: 2px solid #e38d06;
+  /* text-transform: uppercase; */
+}
+input[type="text"]:focus-visible {
+  border: 2px solid #e38d06;
+  color: #060606;
+}
+input[type="submit"] {
+  padding: 10px 50px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #e38d06;
+  color: aliceblue;
+  border: 2px solid white;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 501px) {
+  body {
+    margin: 10px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+  input[type="submit"] {
+    width: 100%;
+    /* margin: 0; */
+  }
+  .login h1 {
+    font-size: 150%;
+  }
+  .formu p {
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 361px) {
+  .login h1 {
+    font-size: 150%;
+  }
+}
+@media screen and (max-width: 301px) {
+  .formu {
+    margin: 10px;
+    max-width: 100%;
+  }
+  input[type="text"] {
+    width: 50%;
+  }
+  input[type="submit"] {
+    width: 50%;
+    /* margin: 0; */
+  }
+  .login h1 {
+    font-size: 150%;
+  }
+}
